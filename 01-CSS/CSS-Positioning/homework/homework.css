@@ -37,7 +37,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 {
      position: fixed;
      top: 0px;
-     left :0px;
+    
 }
 
 
@@ -46,7 +46,6 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 { 
      /* position: relative; */
      display: flex;
-     align-content: center;
      justify-content: space-evenly;
     align-items:  center;
 }
@@ -73,4 +72,12 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 background-color: blueviolet;
 align-items: initial;
 border-color: solid coral;
+align-self: flex-start;
+}
+#elementoCuatro
+{
+background-color:blue;
+align-items: initial;
+border-color: solid coral;
+align-self: flex-end;
 }
