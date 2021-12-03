@@ -32,15 +32,19 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
 
-  switch (status) {
-    case 1:
-            return 'Online';
-    case 2:
-      return 'Away'
+  // switch (status) {
+  //   case 1:
+  //           return 'Online';
+  //   case 2:
+  //     return 'Away'
        
-    default:
-      return 'Offline';
-  }
+  //   default:
+  //     return 'Offline';
+  // }
+  // mas eficiente menos lineas de codigo
+  if (status===1 ) {return 'Online'  }
+  if (status===2 ) {return 'Away'  }
+  return 'Offline'
 }
 
 function saludo(idioma) {
