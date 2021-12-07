@@ -14,9 +14,7 @@ function crearGato(nombre, edad) {
   }
 }
  return gato
-
 }
-
 
 function agregarPropiedad(objeto, property) {
   // Agrega una propiedad al objeto (argumento "objeto") con el valor `null`
@@ -39,8 +37,8 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // "objetoMisterioso" tiene una propiedad llamada "numeroMisterioso"
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
-  var producto= 5 * objetoMisterioso.numeroMisterioso
- return producto
+  // var producto= 5 * objetoMisterioso.numeroMisterioso
+ return 5 * objetoMisterioso.numeroMisterioso
 }
 
 function eliminarPropiedad(objeto, unaPropiedad) {
@@ -68,7 +66,7 @@ function tieneEmail(usuario) {
   // Devuelve "true" si el usuario tiene un valor definido para la propiedad "email"
   // De lo contratio, devuelve "false"
   // Tu código:
-  if (usuario['email']) return true
+  if (usuario.email) return true
   return false
 }
 
@@ -88,7 +86,7 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (usuario['password']===password) return true 
+  if (usuario.password===password) return true 
   return false 
 }
 
@@ -97,7 +95,7 @@ function actualizarPassword(usuario, nuevaPassword) {
   // Devuelve el objeto
   // Tu código:
   // usuario.password = nuevaPassword //tambien esta ok
-  usuario['password']=nuevaPassword
+  usuario.password=nuevaPassword
   return usuario
 }
 
@@ -107,7 +105,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // Tu código:
   
-  usuario['amigos'].push(nuevoAmigo)
+  usuario.amigos.push(nuevoAmigo)
   return usuario
 }
 
