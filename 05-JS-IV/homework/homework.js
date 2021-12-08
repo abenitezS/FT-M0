@@ -79,6 +79,7 @@ function tienePropiedad(objeto, propiedad) {
 
   if (objeto[propiedad]) return true
   return false
+ // return objeto.HasOwnProperty(propiedad) // mas cortito
 }
 
 function verificarPassword(usuario, password) {
