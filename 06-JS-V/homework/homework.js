@@ -20,7 +20,7 @@ function crearUsuario() {
     return 'Hola, mi nombre es '+ this.nombre
   }
 }
-  return usuario 
+return usuario 
 }
 
 function agregarMetodoPrototype(Constructor) {
@@ -66,9 +66,11 @@ function agregarStringInvertida() {
       this.domicilio= domicilio
     }
     detalle() {
-      var persona1 = new Persona(nombre, apellido, edad, domicilio)
-      return persona1
-    }
+      return {Nombre: this.nombre,
+              Apellido:this.apellido,
+              Edad:this.edad,
+              Domicilio: this.domicilio}
+         }
 }
 
 function crearInstanciaPersona(nombre, apellido, edad, dir) {
@@ -84,7 +86,8 @@ function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
   Persona.prototype.datos= function() {
-    return this.nombre+', '+ this.edad +' años'
+    //return this.nombre+', '+ this.edad +' años'
+   return`${this.nombre}, ${this.edad} años`
   }
 }
 // No modificar nada debajo de esta línea
